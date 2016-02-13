@@ -3,8 +3,51 @@ package bjs.task20;
 import bjs.task20.computers.*;
 import bjs.task20.computerstore.ComputerStore;
 
+import java.util.*;
+
+class Shape {
+    public void draw() {
+        //ничего не делаем
+    }
+}
+
+class Square extends Shape {
+    public void draw() {
+        System.out.println("Square");
+    }
+}
+
+class Сircle extends Shape {
+    public void draw() {
+        System.out.println("Сircle");
+    }
+}
+
+class Triangle extends Shape {
+    public void draw() {
+        System.out.println("Triangle");
+    }
+
+    public <T> void gt(T in) {
+
+    }
+}
+
+
+
+
 public class Main {
     public static void main(String[] args) {
+
+        List list = new ArrayList<String>();
+
+        Shape[] a = new Shape[]{new Shape(), new Triangle(), new Square(), new Сircle()};
+
+        for(int i = 0; i < a.length; i++) {
+            a[i].draw();
+        }
+
+
         ComputerStore computerStore = new ComputerStore();
 
         Desktop desktop = new Desktop();

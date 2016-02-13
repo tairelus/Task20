@@ -14,8 +14,8 @@ public class Tablet extends Computer {
     @Override
     public String toString() {
         String result = super.toString();
-        result += "Display: " + display + "\n";
-        result += "\nPrice:  " + getPrice() + "\n";
+        result += "Display: " + display + "\n\n";
+        result += "Price:  " + getPrice() + "\n";
 
         return result;
     }
